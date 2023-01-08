@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Banner from './components/Banner';
 import Formulario from './components/Formulario';
 import Time from './components/Time';
 
@@ -52,7 +51,6 @@ function App() {
 
   return (
     <div className="App">
-      <Banner />
       <Formulario times={times.map(time => time.nome)} aoColaboradorCadrastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
 
       {times.map(time => <Time
